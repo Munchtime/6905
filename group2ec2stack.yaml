@@ -360,10 +360,10 @@ Resources:
       SecurityGroups:
         - !Ref InstanceSecurityGroup
       KeyName: !Ref KeyName
-      ImageId: !FindInMap
+      ImageId: !FindInMap 
         - AWSRegionArch2AMI
         - !Ref 'AWS::Region'
-        - !FindInMap
+        - !FindInMap 
           - AWSInstanceType2Arch
           - !Ref InstanceType
           - Arch
@@ -382,16 +382,16 @@ Outputs:
     Value: !Ref EC2Instance
   AZ:
     Description: Availability Zone of the newly created EC2 instance
-    Value: !GetAtt
+    Value: !GetAtt 
       - EC2Instance
       - AvailabilityZone
   PublicDNS:
     Description: Public DNSName of the newly created EC2 instance
-    Value: !GetAtt
+    Value: !GetAtt 
       - EC2Instance
       - PublicDnsName
   PublicIP:
     Description: Public IP address of the newly created EC2 instance
-    Value: !GetAtt
+    Value: !GetAtt 
       - EC2Instance
       - PublicIp
