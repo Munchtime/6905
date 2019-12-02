@@ -42,10 +42,10 @@ Resources:
   DatabaseInstance:
     Type: AWS::RDS::DBInstance
     Properties:
-      DBName: "blog"
+      DBName: "database-group2"
       Engine: MySQL
-      MasterUsername: bloguser
-      MasterUserPassword: password123
+      MasterUsername: admin
+      MasterUserPassword: passwordmtm
       DBInstanceClass: db.t2.micro
       AllocatedStorage: '5'
       DBSecurityGroups:
