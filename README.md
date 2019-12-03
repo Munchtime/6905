@@ -24,5 +24,9 @@ docker run -d -p 80:80 wordpress
 
 Deploy on Amazon
 
+docker-compose -f docker-compose.yaml run --rm app database-group2 db:migrate
+docker-compose -f docker-compose.yaml run --rm app database-group2 db:seed
+docker-compose -f docker-compose.yaml up -d
+
 
 
