@@ -14,3 +14,10 @@ aws cloudformation delete-stack --stack-name group2ec2stack
 To deploy docker to CloudFormation
 
 docker -H tcp://54.184.102.247:2375 ps -a
+
+
+Run WordPress in Docker
+
+docker pull wordpress
+docker run -d -p 80:80 wordpress
+
