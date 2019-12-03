@@ -22,5 +22,5 @@ services:
       DB_USER: admin
       DB_NAME: database-group2
       DB_PASSWORD: passwordmtm
-      DB_HOST: db
+      DB_HOST: database-group2.clcforpddsyj.us-west-2.rds.amazonaws.com
     
